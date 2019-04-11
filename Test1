@@ -1,0 +1,20 @@
+import pandas as pd
+import numpy as np
+import numpy.random as nr
+import matplotlib.pyplot as plt
+import seaborn as sns
+import scipy.stats as ss
+import math
+import pyodbc 
+
+%matplotlib inline
+
+def hist_plot(vals, lab):
+    ## Distribution plot of values
+    sns.distplot(vals)
+    plt.title('Histogram of ' + lab)
+    plt.xlabel('Value')
+    plt.ylabel('Density')
+    
+#labels = np.array
+hist_plot(metricsreport['Fail'], 'Fail')
